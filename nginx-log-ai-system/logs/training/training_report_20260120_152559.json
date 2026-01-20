@@ -1,0 +1,9 @@
+{
+  "timestamp": "20260120_152559",
+  "model_path": "E:\\Desktop\\数据处理\\nginx-log-ai-system\\data\\models\\trained_models\\random_forest\\model.joblib",
+  "vectorizer_path": "E:\\Desktop\\数据处理\\nginx-log-ai-system\\data\\models\\trained_models\\random_forest\\vectorizer.joblib",
+  "train_size": 1,
+  "val_size": 0,
+  "test_size": 0,
+  "results": {}
+}

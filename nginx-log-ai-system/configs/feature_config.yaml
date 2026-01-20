@@ -1,0 +1,90 @@
+features:
+  - name: remote_addr
+    type: ip
+    role: identifier
+    description: 客户端 IP 地址
+
+  - name: status
+    type: integer
+    role: numeric
+    description: HTTP 状态码
+
+  - name: body_bytes_sent
+    type: integer
+    role: numeric
+    description: 响应字节数
+
+  - name: http_referer
+    type: string
+    role: metadata
+    description: 引用页
+
+  - name: http_user_agent
+    type: string
+    role: metadata
+    description: 原始 User-Agent 字段
+
+  - name: timestamp
+    type: datetime
+    role: metadata
+    description: ISO 格式时间戳
+
+  - name: hour
+    type: integer
+    role: numeric
+    description: 小时（0-23）
+
+  - name: day_of_week
+    type: integer
+    role: numeric
+    description: 星期几（0=周一）
+
+  - name: method
+    type: categorical
+    role: categorical
+    description: HTTP 方法
+
+  - name: path
+    type: string
+    role: metadata
+    description: 请求路径
+
+  - name: extension
+    type: categorical
+    role: categorical
+    description: 请求资源扩展名
+
+  - name: request_length
+    type: integer
+    role: numeric
+    description: 请求字符串长度
+
+  - name: geo_country
+    type: categorical
+    role: categorical
+    description: GeoIP 国家代码
+
+  - name: geo_city
+    type: string
+    role: categorical
+    description: GeoIP 城市名称
+
+  - name: geo_latitude
+    type: float
+    role: numeric
+    description: GeoIP 纬度
+
+  - name: geo_longitude
+    type: float
+    role: numeric
+    description: GeoIP 经度
+
+  - name: browser
+    type: categorical
+    role: categorical
+    description: 解析出的浏览器或客户端
+
+  - name: os
+    type: categorical
+    role: categorical
+    description: 解析出的操作系统

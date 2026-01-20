@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - MODEL_DIR=/app/data/models/trained_models/random_forest
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./data/models/trained_models/random_forest:/app/data/models/trained_models/random_forest:ro
+      - ./logs:/app/logs
